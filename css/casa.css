@@ -1,0 +1,62 @@
+
+/*body element style for every page*/
+h1 {
+
+  background-color:#99ccff;
+  color:#3399cc;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 250%;
+  height: 86px;
+  text-indent: 140px;
+}
+
+body {
+  background-color: #d6ebff
+}
+
+footer {
+  background-color:#99ccff;
+  line-height: 250%;
+  height: 86px;
+  text-indent: 140px;
+}
+
+/*container for every page*/
+#page-wrapper {
+  width:90%;
+margin: auto;
+background-color:#ffffff;
+padding: 0 20px 10px;
+box-shadow: 5px 5px 5px #828282;
+}
+
+/*footer style*/
+#footertext {
+  line-height: 95%;
+  padding-left: 100px;
+}
+
+#copyright {
+  float: right;
+  padding-right: 10px;
+  line-height: 900%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: small;
+
+}
+  #navigation1:hover {
+       filter: grayscale(100%);
+  }
+
+  #navigation2:hover {
+       filter: grayscale(100%);
+  }
+  #navigation3:hover {
+       filter: grayscale(100%);
+  }
+  #navigation4:hover {
+       filter: grayscale(100%);
+  }
+  #navigation5:hover {
+       filter: grayscale(100%);
+  }
