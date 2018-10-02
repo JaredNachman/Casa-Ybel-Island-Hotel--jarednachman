@@ -44,6 +44,8 @@ box-shadow: 5px 5px 5px #828282;
   font-size: small;
 
 }
+
+/*navigation hover effect*/
   #navigation1:hover {
        filter: grayscale(100%);
   }
@@ -60,3 +62,100 @@ box-shadow: 5px 5px 5px #828282;
   #navigation5:hover {
        filter: grayscale(100%);
   }
+/*index.html*/
+  /*index.html welcome*/
+  #homepagewelcome {
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 3px 3px 1px #99ccff;
+    font-size: 40px
+  }
+
+  /*index.html slideshow*/
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    border-style: double;
+    border-width: thick;
+    border-color: #99ccff;
+    border-radius: 7px;
+    background-color: #000000;
+  }
+
+.mySlides {
+    display: none;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #99ccff;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*index about*/
+#indexabout {
+  text-align: center;
+  background-color: #99ccff;
+  width: 150px;
+  height: 30px;
+  border-style: double;
+  border-width: normal;
+  border-color: #000000;
+  border-radius: 7px;
+  margin: auto;
+}
+
+.indexabouttext {
+  text-align: left;
+  font-family: fantasy;
+}
