@@ -30,6 +30,27 @@ padding: 0 20px 10px;
 box-shadow: 5px 5px 5px #828282;
 }
 
+.pagetitle {
+  font-family: cursive;
+  text-align: left;
+  text-shadow: 1px 1px 1px #99ccff;
+  font-size: 25px
+}
+
+.bodytext {
+  font-family: fantasy;
+  text-size: 15px;
+}
+
+
+.h3style {
+    font-family: cursive;
+    color: #99ccff;
+    text-shadow: 2px 2px 1px #000000;
+    font-size: 20px
+
+}
+
 /*footer style*/
 #footertext {
   line-height: 95%;
@@ -62,6 +83,8 @@ box-shadow: 5px 5px 5px #828282;
   #navigation5:hover {
        filter: grayscale(100%);
   }
+
+
 /*index.html*/
   /*index.html welcome*/
   #homepagewelcome {
@@ -159,3 +182,5 @@ box-shadow: 5px 5px 5px #828282;
   text-align: left;
   font-family: fantasy;
 }
+
+/*dining.html*/
