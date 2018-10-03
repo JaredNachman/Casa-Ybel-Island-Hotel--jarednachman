@@ -33,11 +33,96 @@
     </nav>
   <div>
 
-  <p>insert page content</p>
+<h2 class="pagetitle">Hotel Amenities</h2>
+<div>
+  <p class="bodytext">
+    Click throught our wide variety of hotel amenities below.<p>
+    </div>
+
+
+<button class="accordion">Business Services</button>
+<div class="panel">
+  <img src="images/business-center.jpg" style="float:right;width:250px;height:150px; margin-right:20px; padding-top:15px;">
+  <ul class="liststyle">
+  <li>Copying</li>
+  <li>Facsimile</li>
+  <li>Wireless Data Connection</li>
+</ul>
+</div>
+
+<button class="accordion">Health and Fitness Center </button>
+<div class="panel">
+  <img src="images/fitness.jpg" style="float:right;width:250px;height:150px; margin-right:20px; padding-top:15px;">
+  <ul class="liststyle">
+  <li>Sauna</li>
+  <li>Weight Room</li>
+  <li>Cardio Machines</li>
+</ul>
+</div>
+
+<button class="accordion">Standard Internet Service</button>
+<div class="panel">
+  <ul class="liststyle">
+  <li>Standard Internet service is free for all guests</li>
+  <li>Wireless Internet available in Standard Rooms, Executive Rooms, Suites,Business Center, Public Areas</li>
+  <li>Wired Internet available in Standard Rooms, Executive Rooms, Suites,Business Center, Public Areas</li>
+  </ul>
+</div>
+<button class="accordion">Entertainment and Recreation</button>
+<div class="panel">
+  <img src="images/poolside.jpg" style="float:right;width:250px;height:150px; margin-right:20px; padding-top:15px;">
+  <ul class="liststyle">
+  <li>Located on the beach with access to miles of shelling and shoreline. Tennis courts, bike rentals with access to miles of bike and jogging trails</li>
+  <li>Recreation & Sports Court</li>
+  <li>Outdoor Pool</li>
+</ul>
+</div>
+
+<button class="accordion">Housekeeping and Laundry Services</button>
+<div class="panel">
+  <ul class="liststyle">
+  <li>On-site Guest Self-Laundry Facilities (washer/dryer)</li>
+  <li>Hours Of Operation: 9:00 AM  to  8:00 PM</li>
+  <li>Daily Housekeeping</li>
+  <li>Weekly Housekeeping</li>
+  </ul>
+</div>
+
+<button class="accordion">Miscellaneous</button>
+<div class="panel">
+  <ul class="liststyle">
+  <li>ATM/Cash Machine</li>
+  <li>Ice Machine</li>
+  <li>Safety Deposit Box available at Front Desk</li>
+  <li>Kids Eat Free</li>
+  <li>Gift Shop</li>
+  <li>Newsstand</li>
+</ul>
+</div><br>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+
+        this.classList.toggle("activeaccordion");
+
+
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
 
   </div><br>
 
-    <footer class="footer" id="footertext"><br>
+    <br><footer class="footer" id="footertext"><br>
 
         <a href="index.html">Home</a>&nbsp; |
         <a href="rooms.html">Rooms</a>&nbsp; |

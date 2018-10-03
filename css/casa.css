@@ -51,6 +51,13 @@ box-shadow: 5px 5px 5px #828282;
 
 }
 
+.liststyle {
+  font-family: fantasy;
+  text-size: 15px;
+  list-style-type: square;
+
+}
+
 /*footer style*/
 #footertext {
   line-height: 95%;
@@ -95,76 +102,81 @@ box-shadow: 5px 5px 5px #828282;
   }
 
   /*index.html slideshow*/
-.slideshow-container {
-    max-width: 800px;
+  * {box-sizing:border-box}
+
+
+  .slideshow-container {
+    max-width: 1000px;
     position: relative;
     margin: auto;
-    border-style: double;
-    border-width: thick;
-    border-color: #99ccff;
-    border-radius: 7px;
-    background-color: #000000;
   }
 
-.mySlides {
-    display: none;
 
-}
+  .mySlides {
+      display: none;
+  }
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-.active, .dot:hover {
-  background-color: #99ccff;
-}
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+  .prev:hover, .next:hover {
+    background-color: #99ccff;
+  }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #99ccff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 /*index about*/
 #indexabout {
   text-align: center;
@@ -183,4 +195,49 @@ box-shadow: 5px 5px 5px #828282;
   font-family: fantasy;
 }
 
-/*dining.html*/
+/*amenities.html*/
+/*accordion*/
+.accordion {
+    background-color: #99ccff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 75%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    margin-left: 140px;
+    font-family: cursive;
+    color: #000000;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 20px
+}
+
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+    margin-left: 140px;
+    height: 175px;
+}
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.activeaccordion:after {
+    content: "\2796";
+}
