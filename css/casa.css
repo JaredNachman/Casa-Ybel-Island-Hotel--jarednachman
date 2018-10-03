@@ -241,3 +241,20 @@ box-shadow: 5px 5px 5px #828282;
 .activeaccordion:after {
     content: "\2796";
 }
+
+/*rooms html*/
+/*top images*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  border-style: double;
+  border-width: medium;
+  border-color: #99ccff;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
