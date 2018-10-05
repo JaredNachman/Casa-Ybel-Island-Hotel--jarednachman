@@ -58,6 +58,12 @@ box-shadow: 5px 5px 5px #828282;
 
 }
 
+.imagestyle {
+  border-style: double;
+  border-width: medium;
+  border-color: #99ccff; 
+}
+
 /*footer style*/
 #footertext {
   line-height: 95%;
@@ -157,7 +163,7 @@ box-shadow: 5px 5px 5px #828282;
   }
 
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #aaa;
   }
 
 
@@ -182,12 +188,13 @@ box-shadow: 5px 5px 5px #828282;
   text-align: center;
   background-color: #99ccff;
   width: 150px;
-  height: 30px;
+  height: 35px;
   border-style: double;
   border-width: normal;
   border-color: #000000;
   border-radius: 7px;
   margin: auto;
+
 }
 
 .indexabouttext {
