@@ -2,6 +2,7 @@
 <html lang="en-us">
 
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/casa.css">
     <meta content="text/html; charset=utf-8" />
     <title>Casa Ybel Island Hotel</title>
@@ -32,10 +33,9 @@
       </b>
     </nav>
   <div>
+
     <span id="homepagewelcome"> <h2>Welcome to Casa Ybel!</h2></span>
-
   <div class="slideshow-container">
-
 
     <div class="mySlides fade">
       <img src="images/Casa-Ybel-min.jpg" style="width:100%;">
@@ -95,13 +95,15 @@
 
   <h2 id="indexabout">About Us</h2><br>
 
+
+
   <p class=indexabouttext>
-    <img src="images/poolside.jpg" style="float:left;width:250px;height:150px; padding-right:20px;">
+    <img class="imagestyle" src="images/poolside.jpg" style="float:left;width:250px;height:150px; margin-right:20px;">
       At Casa Ybel Island Beach resort hotel, guests relax beside the azure waters of the Gulf of Mexico, relishing the sun, sand and stress-free environment of Ybel Island. Our guests have all they need when they stay with us, from a great beach-front location near popular attractions, shopping and dining to the services and amenities that our hotel provides.
       Among Ybel Island hotels, ours offers guests both a tropical beachfront haven and easy access to attractions such as the Patterson Shell Museum, Hernandez Wildlife Refuge and Ybel Lighthouse. Other nearby points of interest include the Dunes and Beachview golf courses, as well as Ybel Island Marina.</p><br>
 
   <br><p class=indexabouttext>
-    <img src="images/tennis-court.jpg" style="float:right;width:250px;height:150px; padding-left:20px;">
+    <img class="imagestyle" src="images/tennis-court.jpg" style="float:right;width:250px;height:150px; margin-left:20px;">
       Our hotel's facility is a great place to host small meetings, retreats or beachside weddings. We provide business travelers with copy and fax services, free high-speed Internet access and even catering, ensuring a stress-free stay.
       While on Ybel Island, our hotel's guests enjoy prime amenities, including an outdoor pool, tennis courts, bike rentals and ping-pong. On-site dining options include the Star Bar and Starfish Grille Restaurant, which offers room service. And, our resort's gift shop, Sincerely SanYbel, offers souvenirs to help you remember your wonderful trip. We look forward to your visit!</p><br><br><br>
 
@@ -118,6 +120,68 @@
         <span id="copyright">  Copyright &copy; 2018 Casa Ybel Island Hotel </span>
 
     </footer>
+
+      <script>
+        $(document).ready(function() {
+        $('h2').removeClass('hidden');
+        $('h2').fadeIn(1000);
+      });
+      </script>
+        <style>
+          h2 {
+            display: none
+              }
+        </style>
+
+
+        <script>
+          $(document).ready(function() {
+          $('.slideshow-container').removeClass('hidden');
+          $('.slideshow-container').fadeIn(6000);
+        });
+        </script>
+          <style>
+            .slideshow-container {
+              display: none
+                }
+          </style>
+
+          <script>
+            $(document).ready(function() {
+            $('.imagestyle').removeClass('hidden');
+            $('.imagestyle').fadeIn(8000);
+          });
+          </script>
+            <style>
+              .imagestyle {
+                display: none
+                  }
+            </style>
+
+            <script>
+              $(document).scroll(function() {
+              $('p').removeClass('hidden');
+              $('p').fadeIn(3000);
+            });
+            </script>
+              <style>
+                p {
+                  display: none
+                    }
+              </style>
+
+              <script>
+                $(document).scroll(function() {
+                $('#indexabout').removeClass('hidden');
+                $('#indexabout').fadeIn(3000);
+              });
+              </script>
+                <style>
+                  #indexabout {
+                    display: none
+                      }
+                </style>
+
 
 
    </div>

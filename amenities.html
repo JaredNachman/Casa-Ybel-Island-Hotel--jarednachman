@@ -2,6 +2,7 @@
 <html lang="en-us">
 
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/casa.css">
     <meta content="text/html; charset=utf-8" />
     <title>Casa Ybel Island Hotel</title>
@@ -14,6 +15,8 @@
     <header>
       <h1>Casa Ybel Island Hotel</h1>
     </header>
+
+
           <style>
             h1 {
             background-image: url("images/shellsmall.jpg");
@@ -39,7 +42,7 @@
     Click throught our wide variety of hotel amenities below.<p>
     </div>
 
-
+<div class="amenitiesaccordion">
 <button class="accordion">Business Services</button>
 <div class="panel">
   <img class="imagestyle" src="images/business-center.jpg" style="float:right;width:250px;height:150px; margin-right:20px; margin-top:15px;">
@@ -100,6 +103,8 @@
 </ul>
 </div><br>
 
+</div>
+
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -136,5 +141,43 @@ for (i = 0; i < acc.length; i++) {
 
 
    </div>
+
+    <script>
+      $(document).ready(function() {
+      $('h2').removeClass('hidden');
+      $('h2').fadeIn(2000);
+        });
+    </script>
+    <style>
+    h2 {
+      display: none
+      }
+      </style>
+
+      <script>
+        $(document).ready(function() {
+        $('p').removeClass('hidden');
+        $('p').fadeIn(4000);
+          });
+      </script>
+      <style>
+      p {
+        display: none
+        }
+        </style>
+
+        <script>
+          $(document).ready(function() {
+          $('.amenitiesaccordion').removeClass('hidden');
+          $('.amenitiesaccordion').fadeIn(5000);
+            });
+        </script>
+        <style>
+        .amenitiesaccordion {
+          display: none
+          }
+          </style>
+
+
    </body>
   </html>

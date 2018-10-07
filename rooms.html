@@ -2,6 +2,7 @@
 <html lang="en-us">
 
   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/casa.css">
     <meta content="text/html; charset=utf-8" />
     <title>Casa Ybel Island Hotel</title>
@@ -36,18 +37,18 @@
   <h2 class="pagetitle">Casa Ybel Rooms</h2>
 
 <p class="bodytext">Your guest room is tropically appointed and just steps from the azure waters of the warm Gulf of Mexico. Included in all rooms are dorm sized refrigerators, microwaves, coffee makers, irons & boards, in-room safes and individual climate control units. We also provide free internet access.</p><br>
-
 <div class="row">
   <div class="column">
-    <img src="images/gulfview-kitchen-suite-3.jpg" alt="Snow" style="width:100%">
+    <img src="images/gulfview-kitchen-suite-3.jpg" style="width:100%">
   </div>
   <div class="column">
-    <img src="images/gulfview-kitchen-suite-6.jpg" alt="Forest" style="width:100%">
+    <img src="images/gulfview-kitchen-suite-6.jpg" style="width:100%">
   </div>
   <div class="column">
-    <img src="images/gulfview-kitchen-suite-4.jpg" alt="Mountains" style="width:100%">
+    <img src="images/gulfview-kitchen-suite-4.jpg" style="width:100%">
   </div>
 </div><br>
+
 
 <h3 class="h3style">Inside the Rooms:</h3>
 
@@ -116,6 +117,78 @@
         <span id="copyright">  Copyright &copy; 2018 Casa Ybel Island Hotel </span>
 
     </footer>
+
+    <script>
+      $(document).ready(function() {
+      $('h2').removeClass('hidden');
+      $('h2').fadeIn(2000);
+        });
+    </script>
+    <style>
+    h2 {
+      display: none
+      }
+      </style>
+
+      <script>
+        $(document).ready(function() {
+        $('p').removeClass('hidden');
+        $('p').fadeIn(4000);
+          });
+      </script>
+      <style>
+      p {
+        display: none
+        }
+        </style>
+
+        <script>
+          $(document).ready(function() {
+          $('.row').removeClass('hidden');
+          $('.row').fadeIn(6000);
+            });
+        </script>
+        <style>
+        .row {
+          display: none
+          }
+          </style>
+
+          <script>
+            $(document).ready(function() {
+            $('h3').removeClass('hidden');
+            $('h3').fadeIn(6000);
+              });
+          </script>
+          <style>
+          h3 {
+            display: none
+            }
+            </style>
+
+          <script>
+            $(document).ready(function() {
+            $('.bodytext').removeClass('hidden');
+            $('.bodytext').fadeIn(8000);
+              });
+          </script>
+          <style>
+          .bodytext {
+            display: none
+            }
+            </style>
+
+            <script>
+              $(document).scroll(function() {
+              $('ul').removeClass('hidden');
+              $('ul').fadeIn(5000);
+                });
+            </script>
+            <style>
+            ul {
+              display: none
+              }
+              </style>
 
 
    </div>
