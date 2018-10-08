@@ -3,15 +3,19 @@
 h1 {
 
   background-color:#99ccff;
-  color:#3399cc;
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 250%;
-  height: 86px;
-  text-indent: 140px;
+  color:#3399cc !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  line-height: 250% !important;
+  height: 86px !important;
+  text-indent: 140px !important;
 }
 
 body {
   background-color: #d6ebff
+}
+
+dd {
+  margin-left: 20px;
 }
 
 footer {
@@ -19,6 +23,7 @@ footer {
   line-height: 250%;
   height: 86px;
   text-indent: 140px;
+  font-family: inherit !important;
 }
 
 /*container for every page*/
@@ -61,7 +66,7 @@ box-shadow: 5px 5px 5px #828282;
 .imagestyle {
   border-style: double;
   border-width: medium;
-  border-color: #99ccff; 
+  border-color: #99ccff;
 }
 
 /*footer style*/
